@@ -1,3 +1,3 @@
 # short
 
-@ cgds.me/short
+@ http://cgds.me/short
