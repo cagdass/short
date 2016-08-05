@@ -1,5 +1,5 @@
 body {
-	font-family: courier;
+    font-family: courier;
 }
 
 .input::-webkit-input-placeholder {
@@ -19,23 +19,23 @@ body {
 }
 
 input[type=text] {
-	margin-top:7px;
-	margin-bottom:7px;
-	padding:7px; 
-	border:1.5px solid #ccc; 
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+    margin-top:7px;
+    margin-bottom:7px;
+    padding:7px; 
+    border:1.5px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 input[type=text]:focus {
-	border-color:#0060a0; 
+    border-color:#0060a0; 
 }
 
 input[type=submit] {
-	padding:5px 15px;
-	margin-top: 10px; 
-	background:#ccc; 
-	border:0 none;
-	cursor:pointer;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
+    padding:5px 15px;
+    margin-top: 10px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }

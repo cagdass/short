@@ -4,9 +4,7 @@
                 content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="./shortstyle.css">
         </head>
-        <body background="./short.png">
-
-
+        <body background="./short.png" style="margin: 15%">
             <form action="shortened.php" method="post">
                 <div align="center" style="margin-top:2cm">
                 	<p><b>Neither the URL nor the short version <wbr>can include whitespace or weird dipshit characters like ^?^?^?*$#.<b></p>
@@ -16,7 +14,6 @@
 	                <input class="input" type="submit">
 	            </div>	            
                 </form>
-
         </body>
 </html>
 
