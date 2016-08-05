@@ -1,4 +1,6 @@
-# Small PHP application to shorten long URL's, redirect to them with shorter extensions.
+# Short
+
+Small PHP application to shorten long URL's, redirect to them with shorter extensions.
 
 Visit [cgds.me/short](http://cgds.me/short) to see it in action.
 
