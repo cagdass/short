@@ -4,6 +4,8 @@
         <link rel="stylesheet" type="text/css" href="./shortstyle.css">
     </head>
     <body background="./short.png"><center style="margin: 20%">
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+    
     <?php
         $url = $_POST["url"];
         $short = $_POST["short"];
@@ -29,10 +31,13 @@
                     mkdir($dirShort, 0777, true);
                     $indexFile = fopen($dir, "w");
                     fwrite($indexFile ,"<html>\n\t<script>\n\t\twindow.location = \"".$url."\";\n\t\t</script>\n\t</html>");
-                    echo "<br>Shortened URL ready to use. <a style='text-align:center' href='http://cgds.me/".$short."'>Click!</a></br>";
+                    $res = "http://cgds.me/".$short;
+                    echo "<br>Shortened URL ready to use. <a style='text-align:center' href='".$res."'>Go there!</a><br/><br/>";
+		    echo "<br><a style=';text-decoration: underline;cursor: pointer;text-align:center' class='btn' data-clipboard-text='".$res."'>Copy Link</a>";
+
                 }
                 else{
-                    echo "<br>Directory already exists</br>";
+                    echo "<br>This short link already exists";
                 }
             }
         }
@@ -41,5 +46,14 @@
             echo "Sorry! Wrong handle.";
         }
     ?>
+    <script>
+    var clipboard = new Clipboard('.btn');
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
     </center></body>
 </html>

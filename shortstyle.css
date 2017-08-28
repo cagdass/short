@@ -19,6 +19,7 @@ body {
 }
 
 input[type=text] {
+    width: 30%;
     margin-top:7px;
     margin-bottom:7px;
     padding:7px; 
@@ -38,4 +39,8 @@ input[type=submit] {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+}
+
+a {
+    color: red;
 }
