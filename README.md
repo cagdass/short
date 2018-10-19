@@ -19,7 +19,7 @@ Visit [cgds.me/short](http://cgds.me/short) to see it in action.
 	cd /root/directory/of/nginx
 	git clone https://github.com/cagdasoztekin/short.git
 	cd short
-	vim shortened.php # Modify the key variable named $key, and the root directory named $dir
+	emacs -nw shortened.php # Modify the key variable named $key, and the root directory named $dir
 	
 
 ## Notes
